@@ -1,6 +1,7 @@
+sudo: false
 language: node_js
 node_js:
-  - "4"
   - "6"
+  - "8"
 after_script:
-  - coveralls < coverage/lcov.info
+  - npm run coverage
